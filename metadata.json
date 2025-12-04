@@ -1,0 +1,5 @@
+{
+  "name": "Order Matters: LLM Fault Localization",
+  "description": "Interactive research visualization for the paper 'Order Matters!', exploring how input order affects LLM performance in software fault localization.",
+  "requestFramePermissions": []
+}
