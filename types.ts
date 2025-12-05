@@ -1,3 +1,4 @@
+
 export interface ChartDataPoint {
   name: string;
   top1: number;
@@ -19,11 +20,19 @@ export interface SegmentationDataPoint {
   worstOrderTop1: number;
 }
 
+export interface LeakageDataPoint {
+  context: string;
+  original: number;
+  renamed: number;
+}
+
 export enum Tab {
-  OVERVIEW = 'Overview',
-  VISUALIZER = 'Kendall Tau Visualizer',
-  RESULTS = 'Experimental Results',
-  CHAT = 'Paper Q&A'
+  OVERVIEW = 'Executive Summary',
+  RQ1 = 'RQ1: Input Sensitivity',
+  RQ2 = 'RQ2: Context Optimization',
+  RQ3 = 'RQ3: Memorization',
+  RQ4 = 'RQ4: Ranking Strategy',
+  CHAT = 'AI Assistant'
 }
 
 export interface ChatMessage {
